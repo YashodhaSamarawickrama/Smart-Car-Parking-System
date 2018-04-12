@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5210c4b-884f-4077-9aae-a8084a7c5fb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/API/routes/slots/Slots.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/routes/slots/Slots.js" afterDir="false" />
-    </list>
+    <list default="true" id="f5210c4b-884f-4077-9aae-a8084a7c5fb7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -112,7 +110,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/API/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -202,12 +200,12 @@
       <workItem from="1523350390749" duration="13000" />
       <workItem from="1523350434874" duration="6465000" />
       <workItem from="1523425670220" duration="8492000" />
-      <workItem from="1523504810497" duration="5748000" />
+      <workItem from="1523504810497" duration="6273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20718000" />
+    <option name="totallyTimeSpent" value="21243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

@@ -12,16 +12,34 @@ const morgan = require('morgan');
 const slotRoutes = require('./routes/slots/Slots');
 const userRoutes = require('./routes/users/users');
 
+app.use(morgan('dev'));
 
-//var db = require('./db');
-
-//var UserController = require('./user/UserController');
 
 //.use is used to make the middleware for the app variable. All the incoming requests will go through it
 
 app.use('/Slots',slotRoutes);
 app.use('/users',userRoutes);
 
+//for requests that dont go to any of the above routes
+
+app.use((req,res,next) =>{
+    const error = new Error("Not found");
+    error.status= 404;
+    //to forward the error and not the request
+    next(error);
+});
+
+//If a DB operation fails
+
+app.use((error,req,res,next) => {
+    res.status(err.status || 500);
+    res.json({
+        error:{
+            message:error.message
+
+        }
+    })
+});
 
 module.exports = app;
 

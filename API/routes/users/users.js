@@ -1,13 +1,29 @@
-var mongoose = require('mongoose');
+const express = require('express');
 
-//table for user details
+//To register different routes
 
-var UserSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    password: String
-});
-mongoose.model('User', UserSchema);
+const router = express.Router();
 
-module.exports = mongoose.model('User');
+//To register a user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = router;
 

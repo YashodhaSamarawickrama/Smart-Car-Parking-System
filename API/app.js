@@ -13,3 +13,4 @@ const slotRoutes = require('./routes/slots/Slots');
 app.use('/Slots',slotRoutes);
 
 module.exports = app;
+

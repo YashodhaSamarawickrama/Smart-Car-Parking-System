@@ -4,7 +4,7 @@ const express = require('express');
 
 const router = express.Router();
 
-//when a GET request comes for a slot
+//when a GET request comes for a slot(User requests for availability)
 
 router.get('/',(req,res,next)=>{
     res.status(200).json({
@@ -25,17 +25,15 @@ router.post('/',(req,res,next)=>{
 router.get('/:slotId',(req,res,next) => {
     const id = req.params.slotId ;
 
+})
+
+//when a POST request comes to a specific slot(Car entry or exit)
+
+router.post('/:slotId',(req,res,next) => {
+
+    const id = req.params.slotId ;
+
 
 })
 
-//var mongoose = require('mongoose');
-//mongoose is used to interact with the Mongo Database
-//table to store the status of parking slots
-/*var SlotSchema = new mongoose.Schema({
-     SlotID: Integer,
-    Availability : String,
-
-
-});
-mongoose.model('Slot', UserSchema);*/
 module.exports = router;

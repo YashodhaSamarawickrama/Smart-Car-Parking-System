@@ -43,11 +43,23 @@ router.post('/:slotId',(req,res,next) => {
 
 //when a POST request comes to a specific slot(Car exit)
 
-router.post('/:slotId',(req,res,next) => {
+router.patch('/:slotId',(req,res,next) => {
 
     const id = req.params.slotId ;
 
-    //set the status of the slot to available
+    //update the status of the slot to available
+
+});
+
+//To delete a slot in any case
+
+router.delete('/:slotId',(req,res,next) => {
+
+    const id = req.params.slotId ;
+
+    res.status(200).json({
+        message:'Slot deleted '
+    });
 
 });
 

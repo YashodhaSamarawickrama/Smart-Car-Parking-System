@@ -6,6 +6,10 @@ const app = express();
 
 const morgan = require('morgan');
 
+//to parse the body of the request using body-parser
+
+const bodyParser = require('body-parser');
+
 
 //Routes which should handle requests
 
@@ -13,6 +17,14 @@ const slotRoutes = require('./routes/slots/Slots');
 const userRoutes = require('./routes/users/users');
 
 app.use(morgan('dev'));
+
+//to parse URL encoded simple bodies
+
+app.use(bodyParser.urlencoded({extended:false}));
+
+//to parse json bodies
+
+app.use(bodyParser.json());
 
 
 //.use is used to make the middleware for the app variable. All the incoming requests will go through it

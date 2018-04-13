@@ -15,6 +15,9 @@ router.get('/',(req,res,next)=>{
 //when a POST request comes for a slot
 
 router.post('/',(req,res,next)=>{
+
+    
+
     res.status(200).json({
         message:'Handling POST requests to /Slots'
     });

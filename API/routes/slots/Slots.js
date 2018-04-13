@@ -16,7 +16,13 @@ router.get('/',(req,res,next)=>{
 
 router.post('/',(req,res,next)=>{
 
-    
+    //to parse the POST request body
+
+    const slot = {
+
+        id:req.body.id;
+        status:req.body.
+    }
 
     res.status(200).json({
         message:'Handling POST requests to /Slots'

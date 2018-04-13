@@ -10,11 +10,22 @@ const morgan = require('morgan');
 
 const bodyParser = require('body-parser');
 
+//mongoose is used to easily manipulate data
+
+const mongoose = require('mongoose');
+
 
 //Routes which should handle requests
 
 const slotRoutes = require('./routes/slots/Slots');
 const userRoutes = require('./routes/users/users');
+
+//connecting to the cluster on MOngoDB Atlas
+
+mongoose.connect('mongodb+srv://admin:'+ process.env.MONGO_ATLAS_PW +'@parksmart1-7f1ua.mongodb.net/test');
+
+
+
 
 app.use(morgan('dev'));
 
@@ -26,7 +37,22 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(bodyParser.json());
 
+/*//Handling Cross Origin Resource Sharing (CORS)
 
+app.use((req,res,next)=>{
+
+    //to allow from any origin
+
+    res.header('Access-Control-Allow-Origin','*');
+
+    //to allow any type of error
+    res.header('Aceess-Control-Allow-Headers','Origin,X-Requested-With,Content-Type,Accept,Authorization');
+
+    if(req.method === 'options'){
+
+    }
+
+})*/
 //.use is used to make the middleware for the app variable. All the incoming requests will go through it
 
 app.use('/Slots',slotRoutes);

@@ -20,9 +20,11 @@ const mongoose = require('mongoose');
 const slotRoutes = require('./routes/slots/Slots');
 const userRoutes = require('./routes/users/users');
 
-//connecting to the cluster on MOngoDB Atlas
+//connecting to the cluster on MongoDB Atlas
 
-mongoose.connect('mongodb+srv://admin:'+ process.env.MONGO_ATLAS_PW +'@parksmart1-7f1ua.mongodb.net/test');
+mongoose.connect('mongodb+srv://admin:'+ process.env.MONGO_ATLAS_PW +'@parksmart1-7f1ua.mongodb.net/test',{
+    useMongoClient:true
+});
 
 
 

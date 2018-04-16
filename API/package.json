@@ -21,7 +21,6 @@
     "morgan": "^1.9.0",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
@@ -30,7 +29,7 @@
     "type": "git",
     "url": "git+https://github.com/YashodhaSamarawickrama/parkSMART.git"
   },
-  "author": "",
+  "author": "Yashodha Manarangi Samarawickrama",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YashodhaSamarawickrama/parkSMART/issues"

@@ -4,7 +4,7 @@
   "description": "REST style API for parkSMART",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "bcryptjs": "*",
@@ -20,7 +20,7 @@
     "mongoose": "^5.0.14",
     "morgan": "^1.9.0",
     "passport": "*",
-    "passport-http": "*",
+    "passport-http": "*"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"

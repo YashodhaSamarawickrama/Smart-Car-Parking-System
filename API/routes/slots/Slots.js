@@ -1,28 +1,74 @@
 const express = require('express');
 
-//To register different routes
+//importing  mongoose
+const mongoose = require('mongoose');
 
+//To register different routes
 const router = express.Router();
 
-//when a GET request comes for a slot(User requests for availability)
+//to import slot model
+const Slot = require('../../Models/slot_model.js');
 
-router.get('/',(req,res,next)=>{
-    res.status(200).json({
-        message:'Handling GET requests to /Slots'
+
+//when a GET request comes for all available slots (to return all slots)
+router.get('/slots',function(req,res){
+
+    res.send({
+        type:'GET'});
+});
+
+//when a POST request comes for a new slot(adding a new slot)
+router.post('/slots',function(req,res){
+    console.log(req.body);
+    res.send({type:'POST',
+        Category:req.body.Category,
+        Status:req.body.Status
     });
 });
 
+//when a PUT request comes for a specific  slot during car entry or exit
+
+router.put('/slots/:id',function(req,res){
+
+    res.send({type:'PUT'});
+});
+
+//when a DELETE  request comes for a slot
+
+router.delete('/slots/:id',function(req,res){
+
+    res.send({type:'DELETE'});
+});
+
+
+
+
+
+
+
+/*
 //when a POST request comes for a slot
+router.post('/slots',(req,res,next)=>{
 
-router.post('/',(req,res,next)=>{
+    //creating an instance of the slot model using the schema as a constructor
+    const slot = new Slot({
+        _id:new mongoose.Types.ObjectId(),
+        category:req.body.category,
+        status:req.body.status
+    });
 
-    //to parse the POST request body
+    //asking mongoose to store the above created object in the database
+    slot.save(function (err,success) {
+        if (err)
+            res.send(err);
+        res.json(success);
+    })
+        .then(result => {
+            console.log(result);
+        })
+        .catch(err => console.log(err));
 
-    const slot = {
 
-        id:req.body.id;
-        status:req.body.
-    }
 
     res.status(200).json({
         message:'Handling POST requests to /Slots'
@@ -30,19 +76,17 @@ router.post('/',(req,res,next)=>{
 });
 
 //when a GET request comes to a specific slot
-
 router.get('/:slotId',(req,res,next) => {
 
     const id = req.params.slotId ;
-    /*if(status of slot id is available return available )
+    /!*if(status of slot id is available return available )
     else return not available
-     */
+     *!/
 
-    /*have to get the status of the slot and if the status is available , return available"*/
+    /!*have to get the status of the slot and if the status is available , return available"*!/
 });
 
 //when a POST request comes to a specific slot(Car entry)
-
 router.post('/:slotId',(req,res,next) => {
 
     const id = req.params.slotId ;
@@ -51,7 +95,6 @@ router.post('/:slotId',(req,res,next) => {
 });
 
 //when a POST request comes to a specific slot(Car exit)
-
 router.patch('/:slotId',(req,res,next) => {
 
     const id = req.params.slotId ;
@@ -61,7 +104,6 @@ router.patch('/:slotId',(req,res,next) => {
 });
 
 //To delete a slot in any case
-
 router.delete('/:slotId',(req,res,next) => {
 
     const id = req.params.slotId ;
@@ -71,6 +113,7 @@ router.delete('/:slotId',(req,res,next) => {
     });
 
 });
+*/
 
 
 module.exports = router;

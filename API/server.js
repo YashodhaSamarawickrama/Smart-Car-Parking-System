@@ -1,5 +1,7 @@
 const http = require('http');
-//const express = require('express');
+const express = require('express');
+//const app = express();
+
 //const bodyParser = require('body-parser');
 //const path = require('path');
 //const cookieParser = require('cookie-parser');
@@ -13,9 +15,10 @@ const LocalStrategy = require('passport-local').Strategy;*/
 //const mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost/parkSMART');
 //const db = mongoose.connection;
-const app = require('./app');
-const port = process.env.PORT || 3000;
 
+const app = require('./app');
+
+const port = process.env.PORT || 4000 ;
 //setting the socket to listen
 app.listen(port,()=>{
     console.log("Server is up and running on http://www.localhost: "+port);

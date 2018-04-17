@@ -20,7 +20,7 @@ router.get('/slots',function(req,res,next){
 //when a POST request comes for a new slot(adding a new slot)
 router.post('/slots',function(req,res,next){
 
-    //intializing a news slot object and saving to database
+    //intializing a new slot object and saving to database
     slot.create(req.body).then(function (Slot) {
         res.send(Slot);
     }).catch(next);
@@ -37,8 +37,11 @@ router.put('/slots/:id',function(req,res,next){
 //when a DELETE  request comes for a slot
 
 router.delete('/slots/:id',function(req,res,next){
+    //extracting the slot ID from route parameter
 
-    res.send({type:'DELETE'});
+    slot.findByIdAndRemove({_id:req.params.id}).then(function (Slot) {
+        res.send(Slot);
+    });
 });
 
 

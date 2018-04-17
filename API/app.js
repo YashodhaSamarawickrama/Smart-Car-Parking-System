@@ -1,5 +1,4 @@
 const express = require('express');
-
 const app = express();
 
 //Morgan is a logger middleware used for logging . It will log any request that comes to the server.
@@ -68,10 +67,7 @@ app.use(function(err,req,res,next) {
 
     //console.log(err);
     res.status(422).send({error:err.message});
-
-
     });
-
 
 module.exports = app;
 

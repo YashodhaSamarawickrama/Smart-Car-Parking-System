@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+//to protect routes from unauthorized access
+const jwt = require('jsonwebtoken');
+
+
 //Morgan is a logger middleware used for logging . It will log any request that comes to the server.
 const morgan = require('morgan');
 

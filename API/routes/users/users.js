@@ -1,15 +1,23 @@
 const express = require('express');
 
-//To register different routes
+//importing  mongoose
+const mongoose = require('mongoose');
 
+//To register different routes
 const router = express.Router();
 
-//To register a user
+//to import user model
+const user = require('../../Models/user_model.js');
 
+//when a new user signups
+router.post('/users',function(req,res,next){
 
+    //intializing a new slot object and saving to database
+    user.create(req.body).then(function (User) {
+        res.send(User);
+    }).catch(next);
 
-
-
+});
 
 
 

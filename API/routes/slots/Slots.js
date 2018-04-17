@@ -11,31 +11,32 @@ const slot = require('../../Models/slot_model.js');
 
 
 //when a GET request comes for all available slots (to return all slots)
-router.get('/slots',function(req,res){
+router.get('/slots',function(req,res,next){
 
     res.send({
         type:'GET'});
 });
 
 //when a POST request comes for a new slot(adding a new slot)
-router.post('/slots',function(req,res){
+router.post('/slots',function(req,res,next){
 
     //intializing a news slot object and saving to database
     slot.create(req.body).then(function (Slot) {
         res.send(Slot);
-    });
+    }).catch(next);
+
 });
 
 //when a PUT request comes for a specific  slot during car entry or exit
 
-router.put('/slots/:id',function(req,res){
+router.put('/slots/:id',function(req,res,next){
 
     res.send({type:'PUT'});
 });
 
 //when a DELETE  request comes for a slot
 
-router.delete('/slots/:id',function(req,res){
+router.delete('/slots/:id',function(req,res,next){
 
     res.send({type:'DELETE'});
 });

@@ -23,8 +23,6 @@ mongoose.connect('mongodb://localhost/parkSMART');
 mongoose.Promise = global.Promise;
 
 
-
-
 //using morgan for logging
 app.use(morgan('dev'));
 
@@ -65,16 +63,14 @@ app.use((req,res,next) =>{
     next(error);
 });
 
-//To handle any error
-app.use((error,req,res,next) => {
-    res.status(error.status || 500);
-    res.json({
-        error:{
-            message:error.message
+//The middleware to handle any error
+app.use(function(err,req,res,next) {
 
-        }
-    })
-});
+    //console.log(err);
+    res.status(422).send({error:err.message});
+
+
+    });
 
 
 module.exports = app;

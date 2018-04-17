@@ -13,8 +13,12 @@ const slot = require('../../Models/slot_model.js');
 //when a GET request comes for all available slots (to return all slots)
 router.get('/slots',function(req,res,next){
 
-    res.send({
-        type:'GET'});
+    slot.find({"Available":"true"}).then(function (Slot) {
+        res.send(Slot);
+
+    })
+
+
 });
 
 //when a POST request comes for a new slot(adding a new slot)

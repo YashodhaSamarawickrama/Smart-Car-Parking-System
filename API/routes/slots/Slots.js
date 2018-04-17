@@ -19,8 +19,11 @@ router.get('/slots',function(req,res){
 
 //when a POST request comes for a new slot(adding a new slot)
 router.post('/slots',function(req,res){
-    console.log(req.body);
+
+    //intializing a news slot object and saving to database
+    Slot.create(req.body);
     res.send({type:'POST',
+
         Category:req.body.Category,
         Status:req.body.Status
     });

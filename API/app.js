@@ -16,14 +16,16 @@ const mongoose = require('mongoose');
 const slotRoutes = require('./routes/slots/Slots');
 const userRoutes = require('./routes/users/users');
 
-/*//connecting to the cluster on MongoDB Atlas
+//connecting to MongoDB
+mongoose.connect('mongodb://localhost/parkSMART');
 
-mongoose.connect('mongodb+srv://admin:'+ process.env.MONGO_ATLAS_PW +'@parksmart1-7f1ua.mongodb.net/test',{
-
-});*/
-
+//overriding the mongoose global promise
+mongoose.Promise = global.Promise;
 
 
+
+
+//using morgan for logging
 app.use(morgan('dev'));
 
 //to parse URL encoded simple bodies

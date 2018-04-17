@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5210c4b-884f-4077-9aae-a8084a7c5fb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/API/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/routes/slots/Slots.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/routes/slots/Slots.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -79,8 +78,8 @@
       <file leaf-file-name="Slots.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/routes/slots/Slots.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="202">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -88,8 +87,8 @@
       <file leaf-file-name="slot_model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/Models/slot_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="168">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -138,8 +137,8 @@
     <handled-path value="$PROJECT_DIR$/API/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="45" />
-    <option name="y" value="-12" />
+    <option name="x" value="-42" />
+    <option name="y" value="-10" />
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
@@ -228,12 +227,12 @@
       <workItem from="1523425670220" duration="8492000" />
       <workItem from="1523504810497" duration="13239000" />
       <workItem from="1523594166000" duration="6448000" />
-      <workItem from="1523846159086" duration="34983000" />
+      <workItem from="1523846159086" duration="35644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69640000" />
+    <option name="totallyTimeSpent" value="70301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -510,15 +509,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API/Models/slot_model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="168">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/API/routes/slots/Slots.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="202">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>

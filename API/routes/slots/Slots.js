@@ -27,10 +27,23 @@ router.post('/slots',function(req,res,next){
 
 });
 
-//when a PUT request comes for a specific  slot during car entry or exit
+//when a PUT request comes for a specific  slot during car entry
 
 router.put('/slots/:id',function(req,res,next){
 
+    slot.findByIdAndUpdate({_id:req.params.id},req.body).then(function() {
+        slot.findOne({_id: req.params.id}).then(function (slot) {
+            res.send(slot);
+        });
+
+    });
+});
+
+//when a PUT request comes for a specific  slot during car exit
+
+router.put('/slots/:id',function(req,res,next){
+
+    slot.findByIdAndUpdate({_id:req.params.id});
     res.send({type:'PUT'});
 });
 

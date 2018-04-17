@@ -4,6 +4,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const slotSchema = new Schema({
+
+    SID:{
+        type:String,
+        required:[true,"Slot ID is required"]
+
+    },
     Reserved:{
         type:Boolean,
         required:[true,"Reserved field is required"]

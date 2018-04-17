@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const router = express.Router();
 
 //to import slot model
-const Slot = require('../../Models/slot_model.js');
+const slot = require('../../Models/slot_model.js');
 
 
 //when a GET request comes for all available slots (to return all slots)
@@ -21,11 +21,8 @@ router.get('/slots',function(req,res){
 router.post('/slots',function(req,res){
 
     //intializing a news slot object and saving to database
-    Slot.create(req.body);
-    res.send({type:'POST',
-
-        Category:req.body.Category,
-        Status:req.body.Status
+    slot.create(req.body).then(function (Slot) {
+        res.send(Slot);
     });
 });
 

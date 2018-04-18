@@ -18,7 +18,7 @@ const LocalStrategy = require('passport-local').Strategy;*/
 
 const app = require('./app');
 
-const port = process.env.PORT || 4000 ;
+const port = process.env.PORT || 4001 ;
 //setting the socket to listen
 app.listen(port,()=>{
     console.log("Server is up and running on http://www.localhost: "+port);

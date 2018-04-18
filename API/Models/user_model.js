@@ -9,6 +9,17 @@ const userSchema = new Schema({
         required:[true,"User ID is required"]
 
     },*/
+
+    FirstName:{
+        type:String,
+        required:[true,"First name is required"]
+
+    },
+    LastName:{
+        type:String,
+        required:[true,"Last name is required"]
+
+    },
     Email:{
         type:String,
         required:[true,"Email field is required"]

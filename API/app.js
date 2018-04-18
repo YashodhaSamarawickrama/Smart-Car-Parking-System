@@ -35,24 +35,6 @@ app.use(bodyParser.urlencoded({extended:false}));
 //to parse json bodies
 app.use(bodyParser.json());
 
-
-/*//Handling Cross Origin Resource Sharing (CORS)
-
-app.use((req,res,next)=>{
-
-    //to allow from any origin
-
-    res.header('Access-Control-Allow-Origin','*');
-
-    //to allow any type of error
-    res.header('Aceess-Control-Allow-Headers','Origin,X-Requested-With,Content-Type,Accept,Authorization');
-
-    if(req.method === 'options'){
-
-    }
-
-})*/
-
 //.use is used to make the middleware for the app variable. All the incoming requests will go through it
 app.use('/api',slotRoutes);
 app.use('/api',userRoutes);

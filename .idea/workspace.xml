@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5210c4b-884f-4077-9aae-a8084a7c5fb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Models/user_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/Models/user_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/routes/slots/Slots.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/routes/slots/Slots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/routes/users/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/routes/users/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +29,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="26">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -59,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Slots.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Slots.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/routes/slots/Slots.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+            <state relative-caret-position="114">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -86,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/routes/users/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -107,6 +101,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>we</find>
+      <find>bc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,13 +115,13 @@
         <option value="$PROJECT_DIR$/nodemon.json" />
         <option value="$PROJECT_DIR$/API/Models/slot.js" />
         <option value="$PROJECT_DIR$/API/Models/user.js" />
-        <option value="$PROJECT_DIR$/API/package.json" />
         <option value="$PROJECT_DIR$/API/Models/slot_model.js" />
         <option value="$PROJECT_DIR$/API/app.js" />
         <option value="$PROJECT_DIR$/API/routes/slots/Slots.js" />
         <option value="$PROJECT_DIR$/API/Models/user_model.js" />
         <option value="$PROJECT_DIR$/API/server.js" />
         <option value="$PROJECT_DIR$/API/routes/users/users.js" />
+        <option value="$PROJECT_DIR$/API/package.json" />
       </list>
     </option>
   </component>
@@ -140,8 +135,8 @@
     <handled-path value="$PROJECT_DIR$/API/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-42" />
-    <option name="y" value="-10" />
+    <option name="x" value="63" />
+    <option name="y" value="-18" />
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
@@ -237,25 +232,25 @@
       <workItem from="1523425670220" duration="8492000" />
       <workItem from="1523504810497" duration="13239000" />
       <workItem from="1523594166000" duration="6448000" />
-      <workItem from="1523846159086" duration="42547000" />
+      <workItem from="1523846159086" duration="46397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77204000" />
+    <option name="totallyTimeSpent" value="81054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3294893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294893" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3294893" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -476,13 +471,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodemon.json" />
-    <entry file="file://$PROJECT_DIR$/API/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -493,10 +481,10 @@
     <entry file="file://$PROJECT_DIR$/API/nodemon.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/app.js">
+    <entry file="file://$PROJECT_DIR$/API/Models/slot_model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="204">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -507,6 +495,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/routes/slots/Slots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -514,24 +523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/Models/slot_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API/routes/users/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/routes/slots/Slots.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

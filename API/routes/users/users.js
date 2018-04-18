@@ -1,5 +1,8 @@
 const express = require('express');
 
+//to hash the passwords
+const bcrypt = require('bcrypt');
+
 //importing  mongoose
 const mongoose = require('mongoose');
 

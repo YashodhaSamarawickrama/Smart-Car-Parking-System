@@ -1,5 +1,5 @@
 const express = require('express');
-
+const session = require('express-session');
 //to hash the passwords using bcryptjs
 const bcrypt= require('bcryptjs');
 
@@ -13,7 +13,7 @@ const router = express.Router();
 const User = require('../../Models/user_model.js');
 
 //const saltRounds = 10;
-
+const jwt = require('jsonwebtoken');
 router.post('/login',function (req,res) {
 
     const Email = req.body.Email;
@@ -31,12 +31,18 @@ router.post('/login',function (req,res) {
             });
         }
 
-        return res.status(200).send({
-            message:"Welcome user"
-        });
+        res.status(200).send({
+
+            message:"Welcome",
+            user
+        })
+        /*.jwt.sign({user},'secretkey',(err,token)=>{
+            res.json({
+                token
+            })
+        });*/
+        //req.session.user = user;
     })
-
-
 });
 
 

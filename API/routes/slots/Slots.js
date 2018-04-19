@@ -1,5 +1,6 @@
 const express = require('express');
-
+const user = require('../users/users.js');
+const session = require('express-session');
 //importing  mongoose
 const mongoose = require('mongoose');
 
@@ -9,17 +10,21 @@ const router = express.Router();
 //to import slot model
 const slot = require('../../Models/slot_model.js');
 
-
+var sess;
 //when a GET request comes for all available slots (to return all slots)
 router.get('/slots',function(req,res,next){
 
-    slot.find({"Available":"true"}).then(function (Slot) {
+    //sess=req.session;
 
-        res.send(Slot);
-
-
-    })
-
+    /*if(!sess.Email){
+        res.status(401).send({
+            message: "Please login to continue"
+        });
+    }
+    else {*/
+        slot.find({"Available": "true"}).then(function (Slot) {
+            res.send(Slot);
+        })
 
 });
 
@@ -48,7 +53,6 @@ router.put('/slots/:id',function(req,res,next){
 //when a PUT request comes for a specific  slot during car exit
 
 router.put('/slots/:id',function(req,res,next){
-
     slot.findByIdAndUpdate({_id:req.params.id});
     res.send({type:'PUT'});
 });

@@ -4,13 +4,24 @@
   "description": "REST style API for parkSMART",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
+    "bcryptjs": "2.4.3",
     "body-parser": "^1.18.2",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
     "express": "^4.16.3",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "^1.15.6",
+    "express-validator": "*",
+    "jsonwebtoken": "^8.2.1",
     "mongodb": "^3.0.5",
-    "mongoose": "^5.0.1"
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0",
+    "passport": "*",
+    "passport-http": "*"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
@@ -19,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/YashodhaSamarawickrama/parkSMART.git"
   },
-  "author": "",
+  "author": "Yashodha Manarangi Samarawickrama",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YashodhaSamarawickrama/parkSMART/issues"

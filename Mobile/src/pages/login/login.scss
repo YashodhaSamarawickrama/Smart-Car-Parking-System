@@ -1,0 +1,62 @@
+page-login {
+
+
+  #login{
+
+    background-color: #213140;
+
+  }
+
+  #forgot{
+    color: aliceblue;
+  }
+
+  .scroll-content{
+    align-content: center;
+    justify-content: center;
+    text-align:center ;
+    display: flex;
+    flex-direction: column;
+  }
+  ion-card.card{
+    color: khaki;
+    box-shadow: none;
+    background: rgba(0,0,0,0);
+
+  }
+  .list>.item-block.first-child {
+    border: medium none;
+  }
+  .item {
+    background: gainsboro;
+    margin-bottom: 10px;
+    border: medium none;
+
+    .text-input {
+      color: #fff;
+    }
+
+    input::-moz-placeholder{
+      color: #fff!important;
+
+  }
+    input:-moz-placeholder{
+      color: #fff!important;
+
+    }
+
+    *:-moz-placeholder
+    {
+      color: #fff!important;
+    }
+    *:-ms-input-placeholder{
+      color: #fff!important;
+    }
+    *::-webkit-input-placeholder{
+      color: #fff!important;
+    }
+  }
+  .icon{
+    padding-right: 10px;
+  }
+}

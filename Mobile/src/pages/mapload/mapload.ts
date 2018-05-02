@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {WelcomePage} from "../welcome/welcome";
 
 /**
  * Generated class for the MaploadPage page.
@@ -20,6 +21,9 @@ export class MaploadPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MaploadPage');
+  }
+  home(){
+    this.navCtrl.push(WelcomePage);
   }
 
 }

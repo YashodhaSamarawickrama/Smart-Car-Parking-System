@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {CheckAvailabilityPage} from  "../check-availability/check-availability";
+import {WelcomePage} from "../welcome/welcome";
 
 /**
  * Generated class for the SignupPage page.
@@ -24,5 +25,8 @@ export class SignupPage {
   }
   signup(){
     this.navCtrl.push(CheckAvailabilityPage);
+  }
+  home(){
+    this.navCtrl.push(WelcomePage);
   }
 }

@@ -1,49 +1,43 @@
-
-
-<ion-content padding>
-
+<ion-content padding id ="map">
   <div class ="table">
     <table>
+      <tr>
+      <td rowspan="2" >1</td>
+      <td>4</td>
+      <td>5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>7</td>
 
-      <div id ="row">
+      </tr>
+      <tr>
+        <td rowspan="2">2</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
 
-        <tr>
-          <td>
-            Slot1
-          </td>
-          <td>
-            Slot2
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Slot3
-          </td>
-          <td>
-            Slot 4
-          </td>
-        </tr>
+      </tr>
 
+      <tr>
+        <td rowspan="2">3</td>
+        <td>12</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>15</td>
 
-
-
-
-      </div>
-
-
-
-
-
+      </tr>
 
 
     </table>
 
-
-
   </div>
-
-
-
-
-
+  <button ion-button icon-left (click)="home()">
+    <ion-icon name="home"></ion-icon>
+  </button>
 </ion-content>

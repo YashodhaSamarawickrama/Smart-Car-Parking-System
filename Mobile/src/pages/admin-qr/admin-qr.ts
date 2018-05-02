@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import {WelcomePage} from "../welcome/welcome";
 
 /**
  * Generated class for the AdminQrPage page.
@@ -17,7 +18,6 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 export class AdminQrPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private qrScanner: QRScanner) {
-
 
     this.qrScanner.prepare()
       .then((status: QRScannerStatus) => {

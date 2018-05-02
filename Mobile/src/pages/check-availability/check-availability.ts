@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {MaploadPage }from "../mapload/mapload";
+import {WelcomePage} from "../welcome/welcome";
 
 /**
  * Generated class for the CheckAvailabilityPage page.
@@ -24,5 +25,8 @@ export class CheckAvailabilityPage {
   }
   mapload(){
     this.navCtrl.push(MaploadPage);
+  }
+  home(){
+    this.navCtrl.push(WelcomePage);
   }
 }

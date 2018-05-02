@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {CheckAvailabilityPage} from  "../check-availability/check-availability";
 import {AdminpanelPage}from "../adminpanel/adminpanel";
+import {WelcomePage} from "../welcome/welcome";
+
 
 
 
@@ -24,5 +26,8 @@ export class LoginPage {
   }
   admin(){
     this.navCtrl.push(AdminpanelPage);
+  }
+  home(){
+    this.navCtrl.push(WelcomePage);
   }
 }

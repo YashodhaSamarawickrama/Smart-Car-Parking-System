@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {AdminQrPage} from "../admin-qr/admin-qr";
 import {AdminmaploadPage}from "../adminmapload/adminmapload";
+import {WelcomePage} from "../welcome/welcome";
 
 
 /**
@@ -29,5 +30,8 @@ export class AdminpanelPage {
   }
   loadmap(){
     this.navCtrl.push(AdminmaploadPage);
+  }
+  home(){
+    this.navCtrl.push(WelcomePage);
   }
 }
